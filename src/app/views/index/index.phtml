@@ -1,0 +1,19 @@
+<?php
+echo "<h1>Hello User Welcome</h1>";
+echo PHP_EOL;
+
+?>
+<form action ="/index/detail" method="Post">
+<?php
+echo "<label for='db'>Choose an option:</label>";
+
+echo " <select name='db' class='form-control'>";
+foreach ($data as $key => $value) {
+    echo "
+    <option value=$key>$key</option>   ";
+}
+echo " </select>";
+echo "<br>";
+?>
+<button type ='submit' class="btn btn-info">Submit</button>
+</form>
